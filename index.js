@@ -4,77 +4,88 @@ const port = 4242;
 
 const app = express();
 app.use(cors("*"));
+app.use(express.static('assets'));
 
 const data = [
     {
         "id": 1,
         "name": "Bananes",
-        "namePrix":"Bananes - 25 mushs",
-        "prix": 25,
-        "image": "./src/assets/bananes1.png"
+        "namePrice":"Bananes - 25 mushs",
+        "price": 25,
+        "image": "/bananes1.png",
+        "shipping": "Immediat"
     },
     {
         "id": 2,
         "name": "Chou Kale",
-        "namePrix":"Chou Kale - 25 mushs",
-        "prix": 25,
-        "image": "./src/assets/chouxKale1.png"
+        "namePrice":"Chou Kale - 25 mushs",
+        "price": 25,
+        "image": "/chouxKale1.png",
+        "shipping": "2 jours ouvres"
     },
     {
         "id": 3,
         "name": "Poupee Gonflable",
-        "namePrix":"Poupee Gonflable - 100 mushs",
-        "prix": 100,
-        "image": "./src/assets/poupee1.png"
+        "namePrice":"Poupee Gonflable - 100 mushs",
+        "price": 100,
+        "image": "/poupee1.png",
+        "shipping": "2 jours ouvres"
     },
     {
         "id": 4,
         "name": "Anti Puces",
-        "namePrix":"Anti Puces - 75 mushs",
-        "prix": 75,
-        "image": "./src/assets/antiPuces1.png"
+        "namePrice":"Anti Puces - 75 mushs",
+        "price": 75,
+        "image": "/antiPuces1.png",
+        "shipping": "Moins de 24h"
     },
     {
         "id": 5,
         "name": "Kit Reparation",
-        "namePrix":"Kit Reparation - 150 mushs",
-        "prix": 150,
-        "image": "./src/assets/kitLianes1.png"
+        "namePrice":"Kit Reparation - 150 mushs",
+        "price": 150,
+        "image": "/kitLianes1.png",
+        "shipping": "Moins de 24h"
     },
     {
         "id": 6,
         "name": "Gratte Dos",
-        "namePrix":"Gratte Dos - 50 mushs",
-        "prix": 50,
-        "image": "./src/assets/gratteDos1.png"
+        "namePrice":"Gratte Dos - 50 mushs",
+        "price": 50,
+        "image": "/gratteDos1.png",
+        "shipping": "Moins de 24h"
     },
     {
         "id": 7,
         "name": "Slip Surprise",
-        "namePrix":"Slip Surprise - 50 mushs",
-        "prix": 50,
-        "image": "./src/assets/slips1.png"
+        "namePrice":"Slip Surprise - 50 mushs",
+        "price": 50,
+        "image": "/slips1.png",
+        "shipping": "2 jours ouvres"
     },
     {
         "id": 8,
         "name": "Vies",
-        "namePrix":"Vies - 100 mushs",
-        "prix": 100,
-        "image": "./src/assets/Vies1.png"
+        "namePrice":"Vies - 100 mushs",
+        "price": 100,
+        "image": "/Vies1.png",
+        "shipping": "Immediat"
     },
     {
         "id": 9,
         "name": "Surprise",
-        "namePrix":"Surprise - 75 mushs",
-        "prix": 75,
-        "image": "./src/assets/pochetteSurprise1.png"
+        "namePrice":"Surprise - 75 mushs",
+        "price": 75,
+        "image": "/surprise1.png",
+        "shipping": "2 jours ouvres"
     },
     {
         "id": 10,
         "name": "Champis",
-        "namePrix":"Champis - 200 mushs",
-        "prix": 200,
-        "image": "./src/assets/mushroom1.png"
+        "namePrice":"Champis - 200 mushs",
+        "price": 200,
+        "image": "/mushroom1.png",
+        "shipping": "2 jours ouvres"
     }
 ]
 
