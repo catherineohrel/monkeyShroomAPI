@@ -68,7 +68,7 @@ const data = [
         "name": "Vies",
         "namePrice":"Vies - 100 mushs",
         "price": 100,
-        "image": "/Vies1.png",
+        "image": "/vies1.png",
         "shipping": "Immediat"
     },
     {
